@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)file:///C:/Users/wjpar/AppData/Local/Temp/mm/_MarkdownMonster_Preview.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>prd 1</title>
+    <!--<base href="file:///C:/Users/wjpar/OneDrive/Desktop/">--><base href=".">
+    
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./prd 1_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./prd 1_files/Theme.css" rel="stylesheet">
+
+    <script src="./prd 1_files/jquery.min.js"></script>
+    <link href="./prd 1_files/vs2015.css" rel="stylesheet">
+    <script src="./prd 1_files/highlight.pack.js"></script>
+    <script src="./prd 1_files/highlightjs-badge.js"></script>
+    <script src="./prd 1_files/preview.js" id="PreviewScript"></script>
+    
+<script id="MermaidScript" src="./prd 1_files/mermaid.min.js.download"></script>
+
+<style>
+pre.mermaid {
+    border: none !important;
+}
+</style>
+<script>
+// to customize initialization create a custom `mermaidInitializer` object
+// in a script block in the header of your template
+window.mermaidInitializer =   window.mermaidInitializer ||  {
+    theme: 'neutral',
+    startOnLoad: true
+};
+mermaid.initialize( mermaidInitializer);
+</script>
+
+<script>
+$(function() {
+    function renderMermaid() {
+        mermaid.init(undefined,'.mermaid');    
+    }  
+    $(document).on('previewUpdated', function() {
+        renderMermaid();
+    });
+});
+</script>
+
+</head>
+<body>
+<div id="MainContent">
+    <!-- Markdown Monster Content -->
+    <h1 id="-construction-management-saas-prd--new-hampshire-edition">🏗️ Construction Management SaaS PRD — New Hampshire Edition</h1>
+<p><em>(Part 1: Business / Strategic Product Requirements Document)</em></p>
+<h2 id="introduction">Introduction</h2>
+<p>This document outlines the <strong>strategic business plan and functional scope</strong> for a SaaS platform designed to manage small-to-medium construction companies in <strong>New Hampshire</strong>.<br>
+The platform provides <strong>end-to-end lifecycle management</strong> — from customer inquiry and quoting to job execution, compliance, invoicing, and reporting — through a <strong>modern web-based dashboard</strong>.</p>
+<p>All customer and internal functions will be delivered as a <strong>SaaS web application</strong>, with a customer-facing site and a professional contractor dashboard. The system will later expand to include AI-driven estimation, subcontractor marketplace, and sustainability metrics.</p>
+<hr>
+<h2 id="1-product-overview">1. Product Overview</h2>
+<h3 id="purpose">Purpose</h3>
+<p>Provide a <strong>cloud-based construction management platform</strong> tailored for New Hampshire contractors. The system reduces manual paperwork, improves transparency, ensures compliance, and accelerates billing cycles.</p>
+<h3 id="vision-statement">Vision Statement</h3>
+<p>To become the <strong>central digital hub</strong> for small construction firms, combining operational management, customer communication, and compliance under one secure, scalable SaaS solution.</p>
+<h3 id="value-proposition">Value Proposition</h3>
+<ul>
+<li><strong>For Contractors:</strong> Simplifies operations, increases profitability, ensures legal compliance.</li>
+<li><strong>For Clients:</strong> Offers visibility, faster service, and transparent billing.</li>
+<li><strong>For Suppliers:</strong> Creates integration opportunities for materials and delivery tracking.</li>
+</ul>
+<hr>
+<h2 id="2-target-users">2. Target Users</h2>
+<table>
+<thead>
+<tr>
+<th>User Type</th>
+<th>Description</th>
+<th>Key Goals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Owner / Administrator</strong></td>
+<td>Small business owner or operations lead</td>
+<td>Manage all jobs, staff, clients, billing</td>
+</tr>
+<tr>
+<td><strong>Project Manager</strong></td>
+<td>Oversees multiple ongoing projects</td>
+<td>Track progress, schedules, budgets</td>
+</tr>
+<tr>
+<td><strong>Estimator</strong></td>
+<td>Handles quotes and job pricing</td>
+<td>Build accurate cost estimates quickly</td>
+</tr>
+<tr>
+<td><strong>Field Worker / Foreman</strong></td>
+<td>Works on-site</td>
+<td>Update progress, upload photos, complete tasks</td>
+</tr>
+<tr>
+<td><strong>Client / Customer</strong></td>
+<td>Requests quotes and tracks projects</td>
+<td>Get quotes, approve work, make payments</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-core-platform-objectives">3. Core Platform Objectives</h2>
+<ol>
+<li><p><strong>Unified SaaS Dashboard:</strong><br>
+Centralize project management, estimates, billing, and reporting.</p>
+</li>
+<li><p><strong>Streamlined Customer Interaction:</strong><br>
+Clients can request quotes, upload files/photos, and track project status online.</p>
+</li>
+<li><p><strong>Automation &amp; Efficiency:</strong><br>
+Automated cost calculations, reminders, and compliance workflows.</p>
+</li>
+<li><p><strong>NH-Specific Compliance:</strong><br>
+Built-in templates for lien waivers, license tracking, and OSHA reports per NH DOL §1400.</p>
+</li>
+<li><p><strong>Scalability:</strong><br>
+Multi-tenant SaaS architecture for contractors of different sizes.</p>
+</li>
+</ol>
+<hr>
+<h2 id="4-high-level-workflow">4. High-Level Workflow</h2>
+<pre class="mermaid" data-processed="true"><svg id="mermaid-1761080578721" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 276px;" viewBox="0 0.0000019073486328125 276 1054.0977783203125" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#mermaid-1761080578721{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-1761080578721 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-1761080578721 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-1761080578721 .error-icon{fill:#552222;}#mermaid-1761080578721 .error-text{fill:#552222;stroke:#552222;}#mermaid-1761080578721 .edge-thickness-normal{stroke-width:1px;}#mermaid-1761080578721 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1761080578721 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1761080578721 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-1761080578721 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1761080578721 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1761080578721 .marker{fill:#666;stroke:#666;}#mermaid-1761080578721 .marker.cross{stroke:#666;}#mermaid-1761080578721 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1761080578721 p{margin:0;}#mermaid-1761080578721 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-1761080578721 .cluster-label text{fill:#333;}#mermaid-1761080578721 .cluster-label span{color:#333;}#mermaid-1761080578721 .cluster-label span p{background-color:transparent;}#mermaid-1761080578721 .label text,#mermaid-1761080578721 span{fill:#000000;color:#000000;}#mermaid-1761080578721 .node rect,#mermaid-1761080578721 .node circle,#mermaid-1761080578721 .node ellipse,#mermaid-1761080578721 .node polygon,#mermaid-1761080578721 .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-1761080578721 .rough-node .label text,#mermaid-1761080578721 .node .label text,#mermaid-1761080578721 .image-shape .label,#mermaid-1761080578721 .icon-shape .label{text-anchor:middle;}#mermaid-1761080578721 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1761080578721 .rough-node .label,#mermaid-1761080578721 .node .label,#mermaid-1761080578721 .image-shape .label,#mermaid-1761080578721 .icon-shape .label{text-align:center;}#mermaid-1761080578721 .node.clickable{cursor:pointer;}#mermaid-1761080578721 .root .anchor path{fill:#666!important;stroke-width:0;stroke:#666;}#mermaid-1761080578721 .arrowheadPath{fill:#333333;}#mermaid-1761080578721 .edgePath .path{stroke:#666;stroke-width:2.0px;}#mermaid-1761080578721 .flowchart-link{stroke:#666;fill:none;}#mermaid-1761080578721 .edgeLabel{background-color:white;text-align:center;}#mermaid-1761080578721 .edgeLabel p{background-color:white;}#mermaid-1761080578721 .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-1761080578721 .labelBkg{background-color:rgba(255, 255, 255, 0.5);}#mermaid-1761080578721 .cluster rect{fill:hsl(0, 0%, 98.9215686275%);stroke:#707070;stroke-width:1px;}#mermaid-1761080578721 .cluster text{fill:#333;}#mermaid-1761080578721 .cluster span{color:#333;}#mermaid-1761080578721 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(-160, 0%, 93.3333333333%);border:1px solid #707070;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1761080578721 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-1761080578721 rect.text{fill:none;stroke-width:0;}#mermaid-1761080578721 .icon-shape,#mermaid-1761080578721 .image-shape{background-color:white;text-align:center;}#mermaid-1761080578721 .icon-shape p,#mermaid-1761080578721 .image-shape p{background-color:white;padding:2px;}#mermaid-1761080578721 .icon-shape rect,#mermaid-1761080578721 .image-shape rect{opacity:0.5;background-color:white;fill:white;}#mermaid-1761080578721 .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#mermaid-1761080578721 .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#mermaid-1761080578721 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker id="mermaid-1761080578721_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578721_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578721_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1761080578721_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1761080578721_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578721_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M138,62.008L138,66.175C138,70.341,138,78.675,138,86.341C138,94.008,138,101.008,138,104.508L138,108.008" id="L_A_B_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_A_B_0" data-points="W3sieCI6MTM4LCJ5Ijo2Mi4wMDgxNTIwMDgwNTY2NH0seyJ4IjoxMzgsInkiOjg3LjAwODE1MjAwODA1NjY0fSx7IngiOjEzOCwieSI6MTEyLjAwODE1MjAwODA1NjY0fV0=" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path><path d="M138,166.016L138,170.183C138,174.35,138,182.683,138,190.35C138,198.016,138,205.016,138,208.516L138,212.016" id="L_B_C_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_B_C_0" data-points="W3sieCI6MTM4LCJ5IjoxNjYuMDE2MzA0MDE2MTEzMjh9LHsieCI6MTM4LCJ5IjoxOTEuMDE2MzA0MDE2MTEzMjh9LHsieCI6MTM4LCJ5IjoyMTYuMDE2MzA0MDE2MTEzMjh9XQ==" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path><path d="M138,270.024L138,274.191C138,278.358,138,286.691,138,294.358C138,302.024,138,309.024,138,312.524L138,316.024" id="L_C_D_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_C_D_0" data-points="W3sieCI6MTM4LCJ5IjoyNzAuMDI0NDU2MDI0MTY5OX0seyJ4IjoxMzgsInkiOjI5NS4wMjQ0NTYwMjQxNjk5fSx7IngiOjEzOCwieSI6MzIwLjAyNDQ1NjAyNDE2OTl9XQ==" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path><path d="M138,374.033L138,378.199C138,382.366,138,390.699,138,398.366C138,406.033,138,413.033,138,416.533L138,420.033" id="L_D_E_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_D_E_0" data-points="W3sieCI6MTM4LCJ5IjozNzQuMDMyNjA4MDMyMjI2NTZ9LHsieCI6MTM4LCJ5IjozOTkuMDMyNjA4MDMyMjI2NTZ9LHsieCI6MTM4LCJ5Ijo0MjQuMDMyNjA4MDMyMjI2NTZ9XQ==" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path><path d="M138,502.049L138,506.216C138,510.382,138,518.716,138,526.382C138,534.049,138,541.049,138,544.549L138,548.049" id="L_E_F_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_E_F_0" data-points="W3sieCI6MTM4LCJ5Ijo1MDIuMDQ4OTEyMDQ4MzM5ODR9LHsieCI6MTM4LCJ5Ijo1MjcuMDQ4OTEyMDQ4MzM5OH0seyJ4IjoxMzgsInkiOjU1Mi4wNDg5MTIwNDgzMzk4fV0=" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path><path d="M138,630.065L138,634.232C138,638.399,138,646.732,138,654.399C138,662.065,138,669.065,138,672.565L138,676.065" id="L_F_G_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_F_G_0" data-points="W3sieCI6MTM4LCJ5Ijo2MzAuMDY1MjE2MDY0NDUzMX0seyJ4IjoxMzgsInkiOjY1NS4wNjUyMTYwNjQ0NTMxfSx7IngiOjEzOCwieSI6NjgwLjA2NTIxNjA2NDQ1MzF9XQ==" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path><path d="M138,734.073L138,738.24C138,742.407,138,750.74,138,758.407C138,766.073,138,773.073,138,776.573L138,780.073" id="L_G_H_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_G_H_0" data-points="W3sieCI6MTM4LCJ5Ijo3MzQuMDczMzY4MDcyNTA5OH0seyJ4IjoxMzgsInkiOjc1OS4wNzMzNjgwNzI1MDk4fSx7IngiOjEzOCwieSI6Nzg0LjA3MzM2ODA3MjUwOTh9XQ==" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path><path d="M138,838.082L138,842.248C138,846.415,138,854.748,138,862.415C138,870.082,138,877.082,138,880.582L138,884.082" id="L_H_I_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_H_I_0" data-points="W3sieCI6MTM4LCJ5Ijo4MzguMDgxNTIwMDgwNTY2NH0seyJ4IjoxMzgsInkiOjg2My4wODE1MjAwODA1NjY0fSx7IngiOjEzOCwieSI6ODg4LjA4MTUyMDA4MDU2NjR9XQ==" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path><path d="M138,942.09L138,946.256C138,950.423,138,958.756,138,966.423C138,974.09,138,981.09,138,984.59L138,988.09" id="L_I_J_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_I_J_0" data-points="W3sieCI6MTM4LCJ5Ijo5NDIuMDg5NjcyMDg4NjIzfSx7IngiOjEzOCwieSI6OTY3LjA4OTY3MjA4ODYyM30seyJ4IjoxMzgsInkiOjk5Mi4wODk2NzIwODg2MjN9XQ==" marker-end="url(#mermaid-1761080578721_flowchart-v2-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="L_A_B_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_B_C_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_C_D_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_D_E_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_E_F_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_F_G_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_G_H_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_H_I_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_I_J_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-0" transform="translate(138, 35.00407600402832)"><rect class="basic label-container" style="" x="-123.44429779052734" y="-27.004076957702637" width="246.8885955810547" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-93.44429779052734, -12.004076957702637)"><rect></rect><foreignobject width="186.8885955810547" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Client Inquiry / Web Form</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-B-1" transform="translate(138, 139.01222801208496)"><rect class="basic label-container" style="" x="-128.47147369384766" y="-27.004076957702637" width="256.9429473876953" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-98.47147369384766, -12.004076957702637)"><rect></rect><foreignobject width="196.9429473876953" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Lead Intake &amp; Qualification</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-C-3" transform="translate(138, 243.0203800201416)"><rect class="basic label-container" style="" x="-126.41983795166016" y="-27.004076957702637" width="252.8396759033203" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-96.41983795166016, -12.004076957702637)"><rect></rect><foreignobject width="192.8396759033203" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Estimate &amp; Quote Creation</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-D-5" transform="translate(138, 347.02853202819824)"><rect class="basic label-container" style="" x="-127.6019058227539" y="-27.004076957702637" width="255.2038116455078" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-97.6019058227539, -12.004076957702637)"><rect></rect><foreignobject width="195.2038116455078" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Customer Approval / E-sign</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-E-7" transform="translate(138, 463.0407600402832)"><rect class="basic label-container" style="" x="-130" y="-39.00815391540527" width="260" height="78.01630783081055"></rect><g class="label" style="" transform="translate(-100, -24.008153915405273)"><rect></rect><foreignobject width="200" height="48.01630783081055"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel"><p>Project Creation &amp; Scheduling</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-F-9" transform="translate(138, 591.0570640563965)"><rect class="basic label-container" style="" x="-130" y="-39.00815391540527" width="260" height="78.01630783081055"></rect><g class="label" style="" transform="translate(-100, -24.008153915405273)"><rect></rect><foreignobject width="200" height="48.01630783081055"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel"><p>Material Procurement &amp; Inventory</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-G-11" transform="translate(138, 707.0692920684814)"><rect class="basic label-container" style="" x="-123.00272369384766" y="-27.004076957702637" width="246.0054473876953" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-93.00272369384766, -12.004076957702637)"><rect></rect><foreignobject width="186.0054473876953" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Field Work &amp; Job Tracking</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-H-13" transform="translate(138, 811.0774440765381)"><rect class="basic label-container" style="" x="-106.20924377441406" y="-27.004076957702637" width="212.41848754882812" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-76.20924377441406, -12.004076957702637)"><rect></rect><foreignobject width="152.41848754882812" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Invoicing &amp; Payments</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-I-15" transform="translate(138, 915.0855960845947)"><rect class="basic label-container" style="" x="-116.5828857421875" y="-27.004076957702637" width="233.165771484375" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-86.5828857421875, -12.004076957702637)"><rect></rect><foreignobject width="173.165771484375" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Compliance &amp; Reporting</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-J-17" transform="translate(138, 1019.0937480926514)"><rect class="basic label-container" style="" x="-124.77581787109375" y="-27.004076957702637" width="249.5516357421875" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-94.77581787109375, -12.004076957702637)"><rect></rect><foreignobject width="189.5516357421875" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Client Feedback &amp; Closure</p></span></div></foreignobject></g></g></g></g></g></svg></pre>
+<hr>
+<h2 id="5-core-modules-and-business-features">5. Core Modules and Business Features</h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Key Capabilities</th>
+<th>Business Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leads &amp; CRM</td>
+<td>Capture and manage inquiries, follow-ups</td>
+<td>Faster conversion and reduced drop-offs</td>
+</tr>
+<tr>
+<td>Estimating</td>
+<td>Automated cost breakdowns by trade/labor/material</td>
+<td>Consistent, data-driven quoting</td>
+</tr>
+<tr>
+<td>Quote Management</td>
+<td>Create, send, and track quote approvals</td>
+<td>Reduces delays in project onboarding</td>
+</tr>
+<tr>
+<td>Scheduling</td>
+<td>Gantt chart, team assignment, and weather integration</td>
+<td>Ensures on-time delivery</td>
+</tr>
+<tr>
+<td>Job Management</td>
+<td>Track project status, milestones, and field activity</td>
+<td>Central project visibility</td>
+</tr>
+<tr>
+<td>Materials &amp; Inventory</td>
+<td>Manage supplier catalogs, purchase orders</td>
+<td>Prevents material shortages and waste</td>
+</tr>
+<tr>
+<td>Invoicing &amp; Payments</td>
+<td>Stripe/QuickBooks integration for billing</td>
+<td>Improves cash flow and transparency</td>
+</tr>
+<tr>
+<td>Compliance &amp; Safety</td>
+<td>Generate NH-compliant forms and reports</td>
+<td>Reduces risk and penalties</td>
+</tr>
+<tr>
+<td>Dashboard &amp; KPIs</td>
+<td>Real-time overview of operations</td>
+<td>Enables better management decisions</td>
+</tr>
+<tr>
+<td>Client Portal</td>
+<td>Clients access quotes, invoices, photos</td>
+<td>Enhances customer trust and satisfaction</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-customer-facing-website-features">6. Customer-Facing Website Features</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quote Request Form</td>
+<td>Collect job details, photos, documents</td>
+</tr>
+<tr>
+<td>File Uploads</td>
+<td>Clients attach blueprints, photos, or insurance docs</td>
+</tr>
+<tr>
+<td>Customer Dashboard</td>
+<td>View quotes, invoices, and job status</td>
+</tr>
+<tr>
+<td>E-signature</td>
+<td>Approve quotes and contracts digitally</td>
+</tr>
+<tr>
+<td>Support Chat / Help Desk</td>
+<td>Optional live chat or ticket submission</td>
+</tr>
+<tr>
+<td>Feedback &amp; Review Form</td>
+<td>Collect client satisfaction data post-job</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="7-user-roles--permissions">7. User Roles &amp; Permissions</h2>
+<pre class="mermaid" data-processed="true"><svg id="mermaid-1761080578827" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 216.82882690429688px;" viewBox="0.00000762939453125 0.0000019073486328125 216.82882690429688 486.040771484375" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#mermaid-1761080578827{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-1761080578827 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-1761080578827 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-1761080578827 .error-icon{fill:#552222;}#mermaid-1761080578827 .error-text{fill:#552222;stroke:#552222;}#mermaid-1761080578827 .edge-thickness-normal{stroke-width:1px;}#mermaid-1761080578827 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1761080578827 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1761080578827 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-1761080578827 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1761080578827 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1761080578827 .marker{fill:#666;stroke:#666;}#mermaid-1761080578827 .marker.cross{stroke:#666;}#mermaid-1761080578827 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1761080578827 p{margin:0;}#mermaid-1761080578827 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-1761080578827 .cluster-label text{fill:#333;}#mermaid-1761080578827 .cluster-label span{color:#333;}#mermaid-1761080578827 .cluster-label span p{background-color:transparent;}#mermaid-1761080578827 .label text,#mermaid-1761080578827 span{fill:#000000;color:#000000;}#mermaid-1761080578827 .node rect,#mermaid-1761080578827 .node circle,#mermaid-1761080578827 .node ellipse,#mermaid-1761080578827 .node polygon,#mermaid-1761080578827 .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-1761080578827 .rough-node .label text,#mermaid-1761080578827 .node .label text,#mermaid-1761080578827 .image-shape .label,#mermaid-1761080578827 .icon-shape .label{text-anchor:middle;}#mermaid-1761080578827 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1761080578827 .rough-node .label,#mermaid-1761080578827 .node .label,#mermaid-1761080578827 .image-shape .label,#mermaid-1761080578827 .icon-shape .label{text-align:center;}#mermaid-1761080578827 .node.clickable{cursor:pointer;}#mermaid-1761080578827 .root .anchor path{fill:#666!important;stroke-width:0;stroke:#666;}#mermaid-1761080578827 .arrowheadPath{fill:#333333;}#mermaid-1761080578827 .edgePath .path{stroke:#666;stroke-width:2.0px;}#mermaid-1761080578827 .flowchart-link{stroke:#666;fill:none;}#mermaid-1761080578827 .edgeLabel{background-color:white;text-align:center;}#mermaid-1761080578827 .edgeLabel p{background-color:white;}#mermaid-1761080578827 .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-1761080578827 .labelBkg{background-color:rgba(255, 255, 255, 0.5);}#mermaid-1761080578827 .cluster rect{fill:hsl(0, 0%, 98.9215686275%);stroke:#707070;stroke-width:1px;}#mermaid-1761080578827 .cluster text{fill:#333;}#mermaid-1761080578827 .cluster span{color:#333;}#mermaid-1761080578827 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(-160, 0%, 93.3333333333%);border:1px solid #707070;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1761080578827 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-1761080578827 rect.text{fill:none;stroke-width:0;}#mermaid-1761080578827 .icon-shape,#mermaid-1761080578827 .image-shape{background-color:white;text-align:center;}#mermaid-1761080578827 .icon-shape p,#mermaid-1761080578827 .image-shape p{background-color:white;padding:2px;}#mermaid-1761080578827 .icon-shape rect,#mermaid-1761080578827 .image-shape rect{opacity:0.5;background-color:white;fill:white;}#mermaid-1761080578827 .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#mermaid-1761080578827 .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#mermaid-1761080578827 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker id="mermaid-1761080578827_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578827_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578827_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1761080578827_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1761080578827_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578827_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M108.414,62.008L108.414,66.175C108.414,70.341,108.414,78.675,108.414,86.341C108.414,94.008,108.414,101.008,108.414,104.508L108.414,108.008" id="L_A_B_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_A_B_0" data-points="W3sieCI6MTA4LjQxNDQwNTgyMjc1MzksInkiOjYyLjAwODE1MjAwODA1NjY0fSx7IngiOjEwOC40MTQ0MDU4MjI3NTM5LCJ5Ijo4Ny4wMDgxNTIwMDgwNTY2NH0seyJ4IjoxMDguNDE0NDA1ODIyNzUzOSwieSI6MTEyLjAwODE1MjAwODA1NjY0fV0=" marker-end="url(#mermaid-1761080578827_flowchart-v2-pointEnd)"></path><path d="M108.414,166.016L108.414,170.183C108.414,174.35,108.414,182.683,108.414,190.35C108.414,198.016,108.414,205.016,108.414,208.516L108.414,212.016" id="L_B_C_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_B_C_0" data-points="W3sieCI6MTA4LjQxNDQwNTgyMjc1MzksInkiOjE2Ni4wMTYzMDQwMTYxMTMyOH0seyJ4IjoxMDguNDE0NDA1ODIyNzUzOSwieSI6MTkxLjAxNjMwNDAxNjExMzI4fSx7IngiOjEwOC40MTQ0MDU4MjI3NTM5LCJ5IjoyMTYuMDE2MzA0MDE2MTEzMjh9XQ==" marker-end="url(#mermaid-1761080578827_flowchart-v2-pointEnd)"></path><path d="M108.414,270.024L108.414,274.191C108.414,278.358,108.414,286.691,108.414,294.358C108.414,302.024,108.414,309.024,108.414,312.524L108.414,316.024" id="L_C_D_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_C_D_0" data-points="W3sieCI6MTA4LjQxNDQwNTgyMjc1MzksInkiOjI3MC4wMjQ0NTYwMjQxNjk5fSx7IngiOjEwOC40MTQ0MDU4MjI3NTM5LCJ5IjoyOTUuMDI0NDU2MDI0MTY5OX0seyJ4IjoxMDguNDE0NDA1ODIyNzUzOSwieSI6MzIwLjAyNDQ1NjAyNDE2OTl9XQ==" marker-end="url(#mermaid-1761080578827_flowchart-v2-pointEnd)"></path><path d="M108.414,374.033L108.414,378.199C108.414,382.366,108.414,390.699,108.414,398.366C108.414,406.033,108.414,413.033,108.414,416.533L108.414,420.033" id="L_D_E_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_D_E_0" data-points="W3sieCI6MTA4LjQxNDQwNTgyMjc1MzksInkiOjM3NC4wMzI2MDgwMzIyMjY1Nn0seyJ4IjoxMDguNDE0NDA1ODIyNzUzOSwieSI6Mzk5LjAzMjYwODAzMjIyNjU2fSx7IngiOjEwOC40MTQ0MDU4MjI3NTM5LCJ5Ijo0MjQuMDMyNjA4MDMyMjI2NTZ9XQ==" marker-end="url(#mermaid-1761080578827_flowchart-v2-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="L_A_B_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_B_C_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_C_D_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_D_E_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-0" transform="translate(108.4144058227539, 35.00407600402832)"><rect class="basic label-container" style="" x="-84.67391586303711" y="-27.004076957702637" width="169.34783172607422" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-54.67391586303711, -12.004076957702637)"><rect></rect><foreignobject width="109.34783172607422" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Admin / Owner</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-B-1" transform="translate(108.4144058227539, 139.01222801208496)"><rect class="basic label-container" style="" x="-88.27445983886719" y="-27.004076957702637" width="176.54891967773438" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-58.27445983886719, -12.004076957702637)"><rect></rect><foreignobject width="116.54891967773438" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Project Manager</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-C-3" transform="translate(108.4144058227539, 243.0203800201416)"><rect class="basic label-container" style="" x="-64.39538192749023" y="-27.004076957702637" width="128.79076385498047" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-34.395381927490234, -12.004076957702637)"><rect></rect><foreignobject width="68.79076385498047" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Estimator</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-D-5" transform="translate(108.4144058227539, 347.02853202819824)"><rect class="basic label-container" style="" x="-75.43478393554688" y="-27.004076957702637" width="150.86956787109375" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-45.434783935546875, -12.004076957702637)"><rect></rect><foreignobject width="90.86956787109375" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Field Worker</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-E-7" transform="translate(108.4144058227539, 451.0366840362549)"><rect class="basic label-container" style="" x="-100.4144058227539" y="-27.004076957702637" width="200.8288116455078" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-70.4144058227539, -12.004076957702637)"><rect></rect><foreignobject width="140.8288116455078" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Client Portal Access</p></span></div></foreignobject></g></g></g></g></g></svg></pre>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td>Full control over company settings, billing, and all modules</td>
+</tr>
+<tr>
+<td>Project Manager</td>
+<td>Manage jobs, schedules, teams, and budgets</td>
+</tr>
+<tr>
+<td>Estimator</td>
+<td>Create and send estimates and quotes</td>
+</tr>
+<tr>
+<td>Field Worker</td>
+<td>Upload job photos, mark tasks complete</td>
+</tr>
+<tr>
+<td>Client</td>
+<td>View quotes, invoices, and project progress</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="8-ux--design-guidelines">8. UX &amp; Design Guidelines</h2>
+<ul>
+<li><strong>Design System:</strong> Modern, intuitive interface with minimal clutter.</li>
+<li><strong>Color Palette:</strong> Light neutral tones with accent colors for warnings and compliance alerts.</li>
+<li><strong>Accessibility:</strong> WCAG 2.1 AA compliant.</li>
+<li><strong>Responsiveness:</strong> Optimized for tablets and smartphones (on-site usability).</li>
+<li><strong>Onboarding:</strong> Guided tooltips, contextual help, and templates for new users.</li>
+</ul>
+<hr>
+<h2 id="9-legal--regulatory-compliance-new-hampshire-focus">9. Legal &amp; Regulatory Compliance (New Hampshire Focus)</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>NH Regulation</th>
+<th>SaaS Functionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contracts &amp; Liens</td>
+<td>RSA 447 – Mechanic's Liens</td>
+<td>Automatic lien release tracking</td>
+</tr>
+<tr>
+<td>Safety &amp; Labor</td>
+<td>NH DOL §1400</td>
+<td>OSHA form generation and incident reporting</td>
+</tr>
+<tr>
+<td>Electronic Transactions</td>
+<td>RSA 294-E</td>
+<td>Secure e-signature and consent storage</td>
+</tr>
+<tr>
+<td>Tax &amp; Accounting</td>
+<td>NH DRA Integration</td>
+<td>Automated tax lookups and payment logs</td>
+</tr>
+<tr>
+<td>Data Privacy</td>
+<td>NH Data Retention Laws</td>
+<td>Encrypted file storage and timed purging</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="10-analytics--reporting">10. Analytics &amp; Reporting</h2>
+<pre class="mermaid" data-processed="true"><svg id="mermaid-1761080578858" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 1053.10595703125px;" viewBox="0 0.0000019073486328125 1053.10595703125 174.0163116455078" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#mermaid-1761080578858{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-1761080578858 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-1761080578858 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-1761080578858 .error-icon{fill:#552222;}#mermaid-1761080578858 .error-text{fill:#552222;stroke:#552222;}#mermaid-1761080578858 .edge-thickness-normal{stroke-width:1px;}#mermaid-1761080578858 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1761080578858 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1761080578858 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-1761080578858 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1761080578858 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1761080578858 .marker{fill:#666;stroke:#666;}#mermaid-1761080578858 .marker.cross{stroke:#666;}#mermaid-1761080578858 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1761080578858 p{margin:0;}#mermaid-1761080578858 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-1761080578858 .cluster-label text{fill:#333;}#mermaid-1761080578858 .cluster-label span{color:#333;}#mermaid-1761080578858 .cluster-label span p{background-color:transparent;}#mermaid-1761080578858 .label text,#mermaid-1761080578858 span{fill:#000000;color:#000000;}#mermaid-1761080578858 .node rect,#mermaid-1761080578858 .node circle,#mermaid-1761080578858 .node ellipse,#mermaid-1761080578858 .node polygon,#mermaid-1761080578858 .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-1761080578858 .rough-node .label text,#mermaid-1761080578858 .node .label text,#mermaid-1761080578858 .image-shape .label,#mermaid-1761080578858 .icon-shape .label{text-anchor:middle;}#mermaid-1761080578858 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1761080578858 .rough-node .label,#mermaid-1761080578858 .node .label,#mermaid-1761080578858 .image-shape .label,#mermaid-1761080578858 .icon-shape .label{text-align:center;}#mermaid-1761080578858 .node.clickable{cursor:pointer;}#mermaid-1761080578858 .root .anchor path{fill:#666!important;stroke-width:0;stroke:#666;}#mermaid-1761080578858 .arrowheadPath{fill:#333333;}#mermaid-1761080578858 .edgePath .path{stroke:#666;stroke-width:2.0px;}#mermaid-1761080578858 .flowchart-link{stroke:#666;fill:none;}#mermaid-1761080578858 .edgeLabel{background-color:white;text-align:center;}#mermaid-1761080578858 .edgeLabel p{background-color:white;}#mermaid-1761080578858 .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-1761080578858 .labelBkg{background-color:rgba(255, 255, 255, 0.5);}#mermaid-1761080578858 .cluster rect{fill:hsl(0, 0%, 98.9215686275%);stroke:#707070;stroke-width:1px;}#mermaid-1761080578858 .cluster text{fill:#333;}#mermaid-1761080578858 .cluster span{color:#333;}#mermaid-1761080578858 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(-160, 0%, 93.3333333333%);border:1px solid #707070;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1761080578858 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-1761080578858 rect.text{fill:none;stroke-width:0;}#mermaid-1761080578858 .icon-shape,#mermaid-1761080578858 .image-shape{background-color:white;text-align:center;}#mermaid-1761080578858 .icon-shape p,#mermaid-1761080578858 .image-shape p{background-color:white;padding:2px;}#mermaid-1761080578858 .icon-shape rect,#mermaid-1761080578858 .image-shape rect{opacity:0.5;background-color:white;fill:white;}#mermaid-1761080578858 .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#mermaid-1761080578858 .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#mermaid-1761080578858 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker id="mermaid-1761080578858_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578858_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578858_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1761080578858_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1761080578858_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1761080578858_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M422.654,46.299L365.315,53.084C307.977,59.869,193.301,73.439,135.963,83.723C78.625,94.008,78.625,101.008,78.625,104.508L78.625,108.008" id="L_Metrics_A_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Metrics_A_0" data-points="W3sieCI6NDIyLjY1MzU0MTU2NDk0MTQsInkiOjQ2LjI5OTI3ODY3MzI2NDg4fSx7IngiOjc4LjYyNSwieSI6ODcuMDA4MTUyMDA4MDU2NjR9LHsieCI6NzguNjI1LCJ5IjoxMTIuMDA4MTUyMDA4MDU2NjR9XQ==" marker-end="url(#mermaid-1761080578858_flowchart-v2-pointEnd)"></path><path d="M422.654,56.986L400.926,61.99C379.198,66.994,335.742,77.001,314.014,85.505C292.287,94.008,292.287,101.008,292.287,104.508L292.287,108.008" id="L_Metrics_B_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Metrics_B_0" data-points="W3sieCI6NDIyLjY1MzU0MTU2NDk0MTQsInkiOjU2Ljk4NjI0NDI0OTcwOTR9LHsieCI6MjkyLjI4NjY4OTc1ODMwMDgsInkiOjg3LjAwODE1MjAwODA1NjY0fSx7IngiOjI5Mi4yODY2ODk3NTgzMDA4LCJ5IjoxMTIuMDA4MTUyMDA4MDU2NjR9XQ==" marker-end="url(#mermaid-1761080578858_flowchart-v2-pointEnd)"></path><path d="M518.109,62.008L518.109,66.175C518.109,70.341,518.109,78.675,518.109,86.341C518.109,94.008,518.109,101.008,518.109,104.508L518.109,108.008" id="L_Metrics_C_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Metrics_C_0" data-points="W3sieCI6NTE4LjEwODcwMzYxMzI4MTIsInkiOjYyLjAwODE1MjAwODA1NjY0fSx7IngiOjUxOC4xMDg3MDM2MTMyODEyLCJ5Ijo4Ny4wMDgxNTIwMDgwNTY2NH0seyJ4Ijo1MTguMTA4NzAzNjEzMjgxMiwieSI6MTEyLjAwODE1MjAwODA1NjY0fV0=" marker-end="url(#mermaid-1761080578858_flowchart-v2-pointEnd)"></path><path d="M613.564,58.783L632.447,63.487C651.331,68.192,689.098,77.6,707.982,85.804C726.865,94.008,726.865,101.008,726.865,104.508L726.865,108.008" id="L_Metrics_D_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Metrics_D_0" data-points="W3sieCI6NjEzLjU2Mzg2NTY2MTYyMTEsInkiOjU4Ljc4MzIxODcwMDY5MDMzfSx7IngiOjcyNi44NjU0OTM3NzQ0MTQxLCJ5Ijo4Ny4wMDgxNTIwMDgwNTY2NH0seyJ4Ijo3MjYuODY1NDkzNzc0NDE0MSwieSI6MTEyLjAwODE1MjAwODA1NjY0fV0=" marker-end="url(#mermaid-1761080578858_flowchart-v2-pointEnd)"></path><path d="M613.564,46.525L669.465,53.272C725.366,60.02,837.169,73.514,893.07,83.761C948.971,94.008,948.971,101.008,948.971,104.508L948.971,108.008" id="L_Metrics_E_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Metrics_E_0" data-points="W3sieCI6NjEzLjU2Mzg2NTY2MTYyMTEsInkiOjQ2LjUyNTI3OTE1MDAxMDIzNX0seyJ4Ijo5NDguOTcxNDczNjkzODQ3NywieSI6ODcuMDA4MTUyMDA4MDU2NjR9LHsieCI6OTQ4Ljk3MTQ3MzY5Mzg0NzcsInkiOjExMi4wMDgxNTIwMDgwNTY2NH1d" marker-end="url(#mermaid-1761080578858_flowchart-v2-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="L_Metrics_A_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Metrics_B_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Metrics_C_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Metrics_D_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Metrics_E_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-Metrics-0" transform="translate(518.1087036132812, 35.00407600402832)"><rect class="basic label-container" style="" x="-95.45516204833984" y="-27.004076957702637" width="190.9103240966797" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-65.45516204833984, -12.004076957702637)"><rect></rect><foreignobject width="130.9103240966797" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Dashboard Metrics</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-A-1" transform="translate(78.625, 139.01222801208496)"><rect class="basic label-container" style="" x="-70.625" y="-27.004076957702637" width="141.25" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-40.625, -12.004076957702637)"><rect></rect><foreignobject width="81.25" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Active Jobs</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-B-3" transform="translate(292.2866897583008, 139.01222801208496)"><rect class="basic label-container" style="" x="-93.03668594360352" y="-27.004076957702637" width="186.07337188720703" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-63.036685943603516, -12.004076957702637)"><rect></rect><foreignobject width="126.07337188720703" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Revenue Forecast</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-C-5" transform="translate(518.1087036132812, 139.01222801208496)"><rect class="basic label-container" style="" x="-82.78532791137695" y="-27.004076957702637" width="165.5706558227539" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-52.78532791137695, -12.004076957702637)"><rect></rect><foreignobject width="105.5706558227539" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Material Usage</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-D-7" transform="translate(726.8654937744141, 139.01222801208496)"><rect class="basic label-container" style="" x="-75.97146987915039" y="-27.004076957702637" width="151.94293975830078" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-45.97146987915039, -12.004076957702637)"><rect></rect><foreignobject width="91.94293975830078" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Profit Margin</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-E-9" transform="translate(948.9714736938477, 139.01222801208496)"><rect class="basic label-container" style="" x="-96.13451385498047" y="-27.004076957702637" width="192.26902770996094" height="54.00815391540527"></rect><g class="label" style="" transform="translate(-66.13451385498047, -12.004076957702637)"><rect></rect><foreignobject width="132.26902770996094" height="24.008153915405273"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Compliance Status</p></span></div></foreignobject></g></g></g></g></g></svg></pre>
+<p><strong>KPIs Monitored:</strong></p>
+<ul>
+<li>Job completion rate</li>
+<li>Cost variance</li>
+<li>Invoice delay average</li>
+<li>Resource utilization</li>
+<li>Compliance score</li>
+</ul>
+<hr>
+<h2 id="11-competitive-edge">11. Competitive Edge</h2>
+<table>
+<thead>
+<tr>
+<th>Strength</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NH Compliance-Built</td>
+<td>Tailored for New Hampshire contractors</td>
+</tr>
+<tr>
+<td>Full SaaS Solution</td>
+<td>Combines customer, financial, and field management</td>
+</tr>
+<tr>
+<td>Ease of Use</td>
+<td>Intuitive UX for non-technical construction teams</td>
+</tr>
+<tr>
+<td>Integrations</td>
+<td>Stripe, QuickBooks, Google Maps, and Mailchimp</td>
+</tr>
+<tr>
+<td>Future-Ready</td>
+<td>AI estimation and subcontractor marketplace in roadmap</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="12-development-roadmap-12-month-plan">12. Development Roadmap (12-Month Plan)</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Duration</th>
+<th>Deliverables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1 – MVP</td>
+<td>3 months</td>
+<td>Leads, Quotes, Projects, Dashboard</td>
+</tr>
+<tr>
+<td>Phase 2 – Integrations</td>
+<td>2 months</td>
+<td>Stripe, QuickBooks, Inventory</td>
+</tr>
+<tr>
+<td>Phase 3 – Dashboard Expansion</td>
+<td>3 months</td>
+<td>Advanced Analytics + Mobile</td>
+</tr>
+<tr>
+<td>Phase 4 – Compliance &amp; Reporting</td>
+<td>2 months</td>
+<td>OSHA + Lien Automation</td>
+</tr>
+<tr>
+<td>Phase 5 – Beta Launch</td>
+<td>2 months</td>
+<td>User Testing &amp; Feedback Loop</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="13-future-enhancements">13. Future Enhancements</h2>
+<ul>
+<li><strong>AI Estimation Engine:</strong> Predict project costs using historical data.</li>
+<li><strong>Subcontractor Marketplace:</strong> Connect certified subcontractors.</li>
+<li><strong>AR Visualization:</strong> View 3D job overlays on mobile.</li>
+<li><strong>Sustainability Metrics:</strong> Carbon tracking per material type.</li>
+</ul>
+<hr>
+<h2 id="14-success-metrics">14. Success Metrics</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>KPI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User Growth</td>
+<td>200+ NH contractors in year 1</td>
+</tr>
+<tr>
+<td>Customer Satisfaction</td>
+<td>90% positive client feedback</td>
+</tr>
+<tr>
+<td>Efficiency</td>
+<td>Reduce average quote-to-job time by 40%</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>SaaS subscription + transaction-based income</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="15-summary">15. Summary</h2>
+<p>This platform delivers a complete digital foundation for New Hampshire construction companies to manage every step of their workflow in one SaaS dashboard.</p>
+<p>By uniting job management, compliance, customer interaction, and payments in a single interface, the system will set a new operational standard for small-to-medium contractors.</p>
+
+    <!-- End Markdown Monster Content -->
+</div>
+
+
+<style>
+@media print {
+   .code-badge { display: none; }
+}
+    .code-badge-pre {
+        position: relative;
+    }
+    .code-badge {
+        display: flex;
+        flex-direction: row;
+        white-space: normal;
+        background: transparent;
+        background: #333;
+        color: white;
+        font-size: 0.875em;
+        opacity: 0.5;
+        transition: opacity linear 0.5s;
+        border-radius: 0 0 0 7px;
+        padding: 5px 8px 5px 8px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .code-badge.active {
+        opacity: 0.8;
+    }
+
+    .code-badge:hover {
+        opacity: .95;
+    }
+
+    .code-badge a,
+    .code-badge a:hover {
+        text-decoration: none;
+    }
+
+    .code-badge-language {
+        margin-right: 10px;
+        font-weight: 600;
+        color: goldenrod;
+    }
+    .code-badge-copy-icon {
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: 0 7px;
+        margin-top:2;
+    }
+    .fa.text-success:{ color: limegreen !important }
+</style><div id="CodeBadgeTemplate" style="display:none">
+    <div class="code-badge">
+        <div class="code-badge-language">{{language}}</div>
+        <div title="Copy to clipboard">
+            <i class="{{copyIconClass}} code-badge-copy-icon"></i>
+        </div>
+     </div>
+</div><div class="mermaidTooltip" style="opacity: 0;"></div></body></html>
